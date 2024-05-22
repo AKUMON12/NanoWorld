@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family-Open+Sans&display-swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #222831;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #222831;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #222831;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+body{
+    background: #dafefe;
+}
+
+
+
+
+.container {
+    text-align: center;
+    margin-top: 65px;
+}
+
+h3.title {
+    color: #393e46;
+}
+
+.teacher .container .above{
+    font-size: 12px;
+    margin: 15px 80px 20px 80px;
+    font-weight: 700;
+    color: #393e46;
+}
+
+.teacher .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teacher .card-container .card{
+    padding: 10px;
+    margin: 25px;
+    background: #00fff5;
+    text-align: center;
+    width: 13rem;
+    box-shadow: 1rem 1rem 1.0rem rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.teacher .card-container .card img{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.teacher .card-container .card:hover img{
+    filter: grayscale(0);
+}
+
+img{
+    max-width: 180px;
+}
+
+.teacher .card-container .card h3{
+    color: #222831;
+    font-size: 23px;
+    padding: .5rem 0;
+}
+
+.card-container .card p{
+    font-size: 15px;
+    color: #393e46;
+    padding-top: 10px;
+}
+
+.teacher .card-container .card .icons a{
+    font-size: 20px;
+    padding: 2.5rem 0px .5rem;
+    color: #222831;
+    margin-right: 140px;
+}
+
+.teacher .card-container .card .icons a:hover{
+    color: #222831ab;
+}

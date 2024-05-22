@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">NanoWorld</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a class="a1" href="Explore.html">Explore</a1>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="Biology.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Materials.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="atoms.mp4" autoplay muted loop></video>
+        
+        <div class="content active">
+            <h1>Scale at which<br><span>biology occurs</span></h1>
+            <p>Cells operate on the nanoscale, with DNA, the genetic material, measuring only about 2 nanometers in diameter, and hemoglobin, responsible for oxygen transport, at 5.5 nanometers. Contemporary research emphasizes refining procedures and treatments to be more precise, personalized, and safe, like the bio-barcode assay, which efficiently identifies disease markers in blood samples, even when present in small quantities, without causing adverse effects.</p>
+            <a href="ReadMore.html">Read More about Nanotechnology in the Philippines</a>
+        </div>
+        
+        <div class="content">
+            <h2>Scale at which<br2>
+                <span2>quantum effects dominate properties of materials</span2>
+            </h2>
+            <p>Particles within the 1-100 nanometer range exhibit distinct properties governed by quantum effects, including altered chemical reactivity, fluorescence, magnetic permeability, melting point, and electrical conductivity. Nanoscale gold, for instance, defies its typical yellow hue, displaying red or purple colors due to restricted electron motion. This property enables selective accumulation in tumors, facilitating precise imaging and targeted laser therapy without harming healthy cells, illustrating the potential of nanotechnology in medical applications.</p>
+            <a href="ReadMore.html">Read More about Nanotechnology in the Philippines</a>
+        </div>
+        
+        <div class="content">
+            <h3>Scale at which surfaces and interfaces<br3>
+                
+                <span3>play a large role in materials properties and interactions</span3>
+                
+            </h3>
+            <p>As we increase the surface area per mass of a particular material, a greater amount of the material comes in contact with another material and can affect its reactivity.</p>
+            <a href="ReadMore.html">Read More about Nanotechnology in the Philippines</a>
+        </div>
+        
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".video-slide");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        } 
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+</body>
+</html>

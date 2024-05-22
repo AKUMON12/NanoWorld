@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family-Open+Sans&display-swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #eaffff;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #eaffff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #eaffff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+:root{
+    --primary-clr: #6c00f9;
+}
+
+body{
+    background-image: url(Nanovations-Nanotech.jpg);
+    color: #393e46;
+}
+
+.body{
+    font-size: 12px;
+}
+
+ul.a {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.flex_align_justify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.tc_wrap{
+    width: 1500px;
+    margin: 80px 150px 0px 150px;
+    max-width: 100%;
+    height: 600px;
+    background: rgba(136, 254, 255, 80%);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 10rem rgba(0, 0, 0, 0.815);
+}
+
+.tc_wrap .tabs_list{
+    width: 280px;
+    background: rgba(0, 173, 181, 50%);
+    height: 100%;
+    color: white;
+}
+
+.tc_wrap .tabs_content{
+    width: calc(100% - 200px);
+    padding: 0 120px 0 50px;
+    height: 100%;
+}
+
+.tc_wrap .tabs_content .tabs_head,
+.tc_wrap .tabs_content .tabs_foot{
+    color: #222831;
+    padding: 25px 0;
+    height: 70px;
+}
+
+.tc_wrap .tabs_content .tabs_head{
+    text-align: center;
+    font-size: 20px;
+}
+
+.tc_wrap .tabs_content .tabs_body{
+    height: calc(100% - 140px);
+    overflow: auto;
+}
+
+.tc_wrap .tabs_list ul{
+    padding: 70px 20px;
+    text-align: right;
+}
+
+.tc_wrap .tabs_list ul li{
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    list-style: none;
+    font-size: 14.8px;
+}
+
+.tc_wrap .tabs_list ul li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 2px;
+    height: 100%;
+    background: #393e46;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tc_wrap .tabs_list ul li.active,
+.tc_wrap .tabs_list ul li:hover{
+    color: #393e46;
+}
+
+.tc_wrap .tabs_list ul li.active:before{
+    opacity: 1;
+}
+
+.tc_wrap .tabs_content .tabs_body .tab_item h3{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #393e46;
+    font-size: 20px;
+}
+
+.tc_wrap .tabs_content .tabs_body .tab_item p{
+    margin-bottom: 20px;
+}
+
+.tc_wrap .tabs_content .tabs_body .tab_item.active{
+    display: block !important;
+}
+
+.tc_wrap .tabs_content .tabs_foot button{
+    width: 125px;
+    padding: 5px 10px;
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tc_wrap .tabs_content .tabs_foot button.done{
+    margin-right: 15px;
+    border-color: #222831;
+    background: #222831;
+    color: aliceblue;
+}
+
+.tc_wrap .tabs_content .tabs_foot button.done:hover{
+    background: #393e4688;
+    color: aliceblue;
+}
+
+button.NanoPhil {
+    width: 250px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 400;
+}
+
+button.NanoPhil {
+    margin-right: 15px;
+    border-color: #222831;
+    background: #222831;
+    color: aliceblue;
+}
+
+button.NanoPhil:hover {
+    background: #393e4688;
+    color: aliceblue;
+}
+
+button.features {
+    width: 250px;
+    padding: 3px 10px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-right: 15px;
+    border-color: #222831;
+    background: #222831;
+    color: aliceblue;
+}
+
+button.features:hover {
+    background: #393e4688;
+    color: aliceblue;
+}
